@@ -1,0 +1,87 @@
+<div class="container">
+  <h1 class="row justify-content-center">calculadora</h1>
+    <div class="row mt-3 justify-content-center">
+      <div class="col-md-3 justify-content-center border bg-light">
+        <input type="text" [(ngModel)]="resultado" class="form-control" readonly="readonly" value="{{resultado}}">
+        <div class="form-group">
+        
+
+
+      <div class="row mt-3"> <!-- primeira linha -->
+
+
+        <div class="col-3 d-grid ">
+          <button type="button" (click) = "clicar( '0' )" class="btn btn-primary btn-lg btn-block " tooltip="Tecla 0"> 0
+          </button>
+          </div>
+
+          <div class="col-3 d-grid ">
+            <button type="button" (click) = "clicar( '1' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 1"> 1
+            </button>
+            </div>
+
+        <div class="col-3 d-grid">
+          <button type="button" (click) = "clicar( '2' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 1">2</button>
+          </div>
+          <div class="col-3 d-grid">
+            <button type="button" (click) = "clicar( '*' )" class="btn btn-secondary btn-lg btn-block" tooltip="Tecla *">*</button>
+          </div>
+
+          <div class="row mt-3"> <!-- segunda linha -->
+
+
+            <div class="col-3 d-grid">
+            <button type="button" (click) = "clicar( '3' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 3">3</button>
+            </div>
+          
+            <div class="col-3 d-grid">
+              <button type="button" (click) = "clicar( '4' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 4">4</button>
+            </div>
+      
+            <div class="col-3 d-grid">
+              <button type="button" (click) = "clicar( '5' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 5">5</button>
+              </div>
+              <div class="col-3 d-grid">
+                <button type="button" (click) = "clicar( '%' )" class="btn btn-secondary btn-lg btn-block" tooltip="Tecla %">%</button>
+              </div>
+
+              <div class="row mt-3"> <!-- terceira linha -->
+
+
+                <div class="col-3 d-grid">
+                <button type="button" (click) = "clicar( '6' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 6">6</button>
+                </div>
+              
+                <div class="col-3 d-grid">
+                  <button type="button" (click) = "clicar( '7' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 7">7</button>
+                </div>
+          
+                <div class="col-3 d-grid">
+                  <button type="button" (click) = "clicar( '8' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 8">8</button>
+                  </div>
+                  <div class="col-3 d-grid">
+                    <button type="button" (click) = "clicar( '-' )" class="btn btn-secondary btn-lg btn-block" tooltip="Tecla -">-</button>
+                  </div>
+
+                  <div class="row mt-3"> <!-- quarta linha -->
+
+
+                    <div class="col-3 d-grid">
+                    <button type="button" (click) = "clicar( '9' )" class="btn btn-primary btn-lg btn-block" tooltip="Tecla 9">9</button>
+                    </div>
+                  
+                    <div class="col-3 d-grid">
+                      <button type="button" (click) = "limpar()" class="btn btn-secondary btn-lg btn-block" tooltip="Tecla ce">ce</button>
+                    </div>
+              
+                    <div class="col-3 d-grid">
+                      <button type="button" (click) = "finalizar()" class="btn btn-danger btn-lg btn-block" tooltip="Tecla =">=</button>
+                      </div>
+                      <div class="col-3 d-grid">
+                        <button type="button" (click) = "clicar( '+' )" class="btn btn-secondary btn-lg btn-block" tooltip="Tecla +">+</button>
+                      </div>
+
+      </div>
+</div>
+
+
